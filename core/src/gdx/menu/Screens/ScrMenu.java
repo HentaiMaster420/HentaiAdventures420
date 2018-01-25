@@ -49,7 +49,7 @@ public class ScrMenu implements Screen, InputProcessor {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         batch.begin();
         batch.setProjectionMatrix(oc.combined);
-        batch.draw(txNamM, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+        batch.draw(txNamM, 0, Gdx.graphics.getHeight(), Gdx.graphics.getWidth(), -Gdx.graphics.getHeight());
         btnPlay.draw(batch);
         btnAni.draw(batch);
         btnScr1.draw(batch);
