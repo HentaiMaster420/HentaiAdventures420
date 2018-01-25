@@ -22,19 +22,11 @@ public class DiagonalAnimationScratch implements Screen {
         game = _game;
         batch = new SpriteBatch();
         Txstand = new Texture("guystanding.png");
-//        TxWdown = new Texture("walkingdown.png");
-//        TxWright = new Texture("walkingright.png");
-//        TxWleft = new Texture("walkingleft.png");
-//        TxWup = new Texture("walkingup.png");
         TxWLU = new Texture("walkingLU.png");
         TxWRU = new Texture("walkingRU.png");
         TxWLD = new Texture("walkingLD.png");
         TxWRD = new Texture("walkingRD.png");
         sprguy = new Sprite(Txstand);
-//        sprWleft = new Sprite(TxWleft);
-//        sprWright = new Sprite(TxWright);
-//        sprWup = new Sprite(TxWup);
-//        sprWdown = new Sprite(TxWdown);
         sprWLU = new Sprite(TxWLU);
         sprWRU = new Sprite(TxWRU);
         sprWLD = new Sprite(TxWLD);
@@ -48,22 +40,6 @@ public class DiagonalAnimationScratch implements Screen {
         batch.begin();
         batch.draw(sprguy, sprguy.getX(), sprguy.getY());
         batch.end();
-//        if (Gdx.input.isKeyPressed(Input.Keys.A)) {
-//            sprguy.setX(sprguy.getX() - 200 * Gdx.graphics.getDeltaTime());
-//            sprguy.setTexture(TxWleft);
-//        }
-//        if (Gdx.input.isKeyPressed(Input.Keys.D)) {
-//            sprguy.setX(sprguy.getX() + 200 * Gdx.graphics.getDeltaTime());
-//            sprguy.setTexture(TxWright);
-//        }
-//        if (Gdx.input.isKeyPressed(Input.Keys.W)) {
-//            sprguy.setY(sprguy.getY() + 200 * Gdx.graphics.getDeltaTime());
-//            sprguy.setTexture(TxWup);
-//        }
-//        if (Gdx.input.isKeyPressed(Input.Keys.S)) {
-//            sprguy.setY(sprguy.getY() - 200 * Gdx.graphics.getDeltaTime());
-//            sprguy.setTexture(TxWdown);
-//        }
         if (Gdx.input.isKeyPressed(Input.Keys.S)&&Gdx.input.isKeyPressed(Input.Keys.A)) {
             sprguy.setY(sprguy.getY() - 60 * Gdx.graphics.getDeltaTime());
             sprguy.setX(sprguy.getX() - 60 * Gdx.graphics.getDeltaTime());
@@ -93,10 +69,6 @@ public class DiagonalAnimationScratch implements Screen {
     public void dispose() {
         batch.dispose();
         Txstand.dispose();
-//        TxWleft.dispose();
-//        TxWright.dispose();
-//        TxWup.dispose();
-//        TxWdown.dispose();
         TxWLD.dispose();
         TxWRD.dispose();
         TxWLU.dispose();
