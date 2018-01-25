@@ -1,0 +1,105 @@
+All journal entries relating to ButtonMenu
+
+October 23, 2017
+-Starting to examine Button and MenuG to merge them, without using Scene2d
+
+October 24, 2017
+-continuing with ButtonMenu
+
+October 25, 2017
+-deleted ButtonMenu and retrying it with a different structure
+
+October 26, 2017
+-importing the programs doesn't work for some reason.
+
+October 27, 2017
+-restarting again, moving the hit detection from Button into the Screens from MenuG
+
+October 31, 2017
+-trying to structure Journal into the program files for ButtonMenu
+
+November 3, 2017
+-setFlip() doesn't work on BitmapFont.  Next course of action will be to embed text within the sprites, which i CAN flip using setFlip.
+-getting a NullPointerException when running ButtonMenu, investigating...
+
+November 6, 2017
+-still unable to run ButtonMenu on ScrGameover, where the hit detection code is
+
+November 7, 2017
+-Mr Grondin reviewed Status Report 3 and went over the code, and moved all of the declarations from create() to show(), and now it works.
+-Now to make hit detection work
+
+November 8, 2017
+-updating every screen to show a sprite, implementing hit detection tomorrow
+
+November 9, 2017
+-Cleaned up the Screens to prepare them for hit detection
+-trying to implement hit detection on Game Over Screen
+
+November 10, 2017
+-trying to put 2 buttons on GameOver, cleaned up the Play sprite
+
+November 13, 2017
+-There are now 2 buttons on GameOver, hit detection on both, but UpdateState on the methods results in error, listed below
+-non-static method updateState(int) cannot be referenced from a static context
+-starting to implement hit detection on ScrMenu
+-screen play and options are having errors parsing the file
+-the Play Screen doesn't detect hits
+
+November 14, 2017
+-comparing ScrMenu and ScrPlay to determine any errors that would prevent it from being run
+-forgot to set the inputprocessor to (this), that fixed the hit detection errors on play
+-Changing isHit() back to a boolean method, more scaleable that way
+-gamMenu.updateState() works, I had to use the gamMenu, not the GamMenu.  gamMenu was declared inside the 
+
+// New Copy:  MenuButton2 //
+
+November 24, 2017
+-made a new copy of MenuButton to experiment with a Button Class
+
+November 25, 2017
+-Creating a Button class, working on understanding inheritance
+
+November 26, 2017
+-The Button class isn't working, unsure how to fix it
+-Adding pictures to each of the screens to show the User which screen they're on
+
+November 28, 2017
+-Continuing to label screens, Button class still not working
+-It works on Game over screen, going to implement Hit detection in class
+-Shows error in Screen when calling Button, but works properly
+
+November 29, 2017
+-Button Class implemented on all screens
+-Worked on implementing isHit() on button, unsure how to proceed.
+-At home, thinking about starting the exhibition
+-Creating a class for movable man
+
+November 30, 2017
+-Trying to put a Dude class in Play screen, but it doesn't want to accept the class, "Can't Find"
+-Ignoring Dude class for now, hit detection between sprites is not on play screen
+-Made the dude into a Button, because it's basically a sprite with less lines
+
+December 1, 2017
+-Adding walls from last year into Play Screen
+-Tried to make new Class for Wall, it doesn't recognize it (again)
+
+December 4, 2017
+-Trying to make Wall Class, still doesn't recognize symbol :(
+
+December 5, 2017
+-Asking Grondin about Class problems
+-Fixed, not declaring class properly, wall class now works
+-Looking at Bradley's code for hints on how to do Animation
+-For some reason, Dude and Wall class declarations are still being considered errors, despite working properly
+
+December 6, 2017
+-Picking apart Bradley's code for Animation help
+-Made a spritesheet for Animation, cloned brad's code to gitHub in order to work on Animation @ home
+
+December 11, 2017
+-Actually starting to merge Animation code from brad's code
+-not working as of yet, working more on it.
+
+December 13, 2017
+-
